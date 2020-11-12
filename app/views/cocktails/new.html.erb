@@ -1,9 +1,10 @@
-<h1>Create a cocktail</h1>
 
-
-<%= simple_form_for @cocktail do |f| %>
-  <%= f.input :name %>
-  <%#= f.input :category, as: :radio_buttons, collection: Restaurant::CATEGORY, wrapper: :vertical_collection_inline %>
-
-  <%= f.submit "Create" %>
-<% end %>
+<div class="container">
+  <h1>Create a cocktail</h1>
+  <%= simple_form_for @cocktail do |f| %>
+    <%= f.input :name %>
+    <%#= f.input :category, as: :radio_buttons, collection: Restaurant::CATEGORY, wrapper: :vertical_collection_inline %>
+    <%= f.input :image_url %>
+    <%= f.submit "Create" %>
+  <% end %>
+</div>
