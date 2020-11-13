@@ -4,7 +4,7 @@
     <div class="col-md-6">
       <h2 class="d-flex justify-content-between">
         <%= @cocktail.name %>
-        <%= link_to icon('fas', 'plus', class: 'strong'), new_cocktail_dose_path(@cocktail), class: "btn btn-primary badge-pill pt-2 ml-5"  %>
+        <%= link_to icon('fas', 'plus', class: 'strong'), new_cocktail_dose_path(@cocktail) %>
       </h2>
       <ul class="list-group">
         <% @cocktail.doses.each do |dose| %>
